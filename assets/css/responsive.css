@@ -1,0 +1,281 @@
+/*****************************************************/
+/************  First Version  ***********************/
+/*****************************************************/
+@media all and (max-width:1200px){
+	.section-padding {
+		padding: 70px 0;
+	}
+	.header-content-meddle {
+		padding-top: 200px;
+		padding-bottom: 200px;
+	}
+}
+@media all and (max-width:991px){
+	.about-video img {
+		width: 100%;
+	}
+	p{
+    	font-size: 13px;
+    	line-height: 22px;
+    	margin-top: 8px;
+	}
+	h2 {
+		font-size: 22px;
+	}
+	h3 {
+		font-size: 13px;
+	}
+	.header-btn {
+		padding-top: 20px;
+	}
+	.section-padding {
+		padding: 60px 0;
+	}
+	.section-heading {
+		padding-bottom: 50px;
+	}
+	.single-services-item h4 {
+		padding-top: 20px;
+	}
+	.hire-me-content h1 {
+		font-size: 36px !important;
+		line-height: 48px !important;
+	}
+	.hire-me-btn {
+		padding-top: 30px;
+	}
+	.hire-me-btn a {
+		font-size: 22px;
+		line-height: 40px;
+	}
+	.about-me-content {
+		padding-top: 40px;
+		text-align: center;
+	}
+	.about-me-social {
+		-webkit-box-pack: center;
+		    -ms-flex-pack: center;
+		        justify-content: center;
+	}
+	.about-social-icon ul {
+		float: none;
+	}
+	.contact-submit {
+		text-align: center;
+	}
+	.contact-submit input {
+		padding: 12px 60px;
+	}
+	.about-social-content p {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+	.about-social-content a {
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+	}
+
+	.main-menu ul {
+		-webkit-box-pack: start;
+		    -ms-flex-pack: start;
+		        justify-content: start;
+		-webkit-box-orient: vertical;
+		-webkit-box-direction: normal;
+		    -ms-flex-direction: column;
+		        flex-direction: column;
+	}
+	.canvas-menu {
+		position: fixed;
+		background-color: #0C0C0C;
+		width: 275px;
+		height: 100%;
+		left: -100%;
+		-webkit-transition: 1s;
+		transition: 1s;
+		z-index: 99;
+		top: 0;
+	}
+	.canvas{
+		left:0;
+		-webkit-transition: 1s;
+		transition:1s;
+	}
+	.nav-bars {
+	    display:block;
+	    z-index: 999;
+	}
+	.main-menu ul li a {
+		display: block;
+		border-bottom: 1px dashed rgba(255,255,255,.4);
+		margin: 4px 0px;
+		padding: 6px 15px;
+		text-transform: uppercase;
+	}
+	.header-content-meddle {
+		padding-top: 160px;
+		padding-bottom: 160px;
+	}
+	.caption-header h5 {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.caption-header h2 {
+		font-size: 38px !important;
+		line-height: 60px !important;
+	}
+	.caption-header p {
+		width: 54%;
+	}
+}
+@media all and (max-width:767px){
+	.about-text {
+		padding-top: 40px;
+		text-align: center;
+	}
+	.about-me-area:before {
+		height: 110%;
+	}
+	.section-padding {
+		padding: 50px 0;
+	}
+	a {
+		font-size: 14px;
+	}
+	.single-services-item {
+		padding-bottom: 40px;
+	}
+	.skills .item {
+		margin-bottom: 30px;
+	}
+	.filtering-btn button {
+		margin: 0 1px;
+	}
+	.pt-counter{
+		padding-top: 40px;
+	}
+	.header-area .logo span a img {
+		height: 50px;
+	}
+	.nav-bars {
+		top: 6px;
+		position: absolute;
+	}
+	.header-content-meddle {
+		padding-top: 140px;
+		padding-bottom: 140px;
+	}
+	.caption-header h5 {
+		font-size: 16px;
+		line-height: 24px;
+	}
+	.caption-header h2 {
+		font-size: 30px !important;
+		line-height: 42px !important;
+	}
+}
+@media all and (max-width:650px){
+	.hire-me-content h1 {
+		font-size: 32px !important;
+		line-height: 42px !important;
+	}
+	.hire-me-btn {
+		padding-top: 20px;
+	}
+	.hire-me-btn a {
+		font-size: 20px;
+		line-height: 36px;
+	}
+	.header-content-meddle {
+		padding-top: 120px;
+		padding-bottom: 120px;
+	}
+}
+@media all and (max-width:575px){
+	.section-padding {
+		padding: 40px 0;
+	}
+	.single-services-item img {
+		height: 54px;
+	}
+	.about-me-social {
+		display: block;
+		-webkit-box-align: normal;
+		    -ms-flex-align: normal;
+		            -ms-grid-row-align: normal;
+		        align-items: normal;
+	}
+	.about-social-content {
+		padding-left: 0;
+		padding-top: 20px;
+	}
+	.about-social-content p {
+		display: block;
+	}
+	.about-social-content a {
+		display: block;
+	}
+	.about-social-content h6 {
+		padding-bottom: 10px;
+	}
+	.header-content-meddle {
+		padding-top: 100px;
+		padding-bottom: 100px;
+	}
+	.header-content-meddle {
+		text-align: center;
+	}
+	.caption-header p {
+		color: #000000;
+		width: 90% !important;
+		margin: 0 auto;
+	}	
+}
+@media all and (max-width:450px){
+	.section-padding {
+		padding: 30px 0;
+	}
+	.skills h3 {
+		top: -15px;
+		text-align: center;
+	}
+	.skills .item {
+		margin-bottom: 40px;
+	}
+	.header-area .logo span a img {
+		height: 45px;
+	}
+	.header-content-meddle {
+		padding-top: 80px;
+		padding-bottom: 80px;
+	}
+	.scrollTop a {
+		font-size: 40px;
+	}
+}
+
+
+/*****************************************************/
+/************  Second Version  ***********************/
+/*****************************************************/
+@media all and (max-width:991px){
+	.second-version .cd-headline.clip .cd-words-wrapper::after {
+	    top: 21px;
+	}
+}
+@media all and (max-width:767px){
+	.second-version .cd-headline.clip .cd-words-wrapper::after {
+	    top: 16px;
+	}
+}
+@media all and (max-width:575px){
+	.second-version .cd-headline.clip .cd-words-wrapper::after {
+	    top: 16px;
+	}
+}
+
+
+/*****************************************************/
+/************   16. Third Version  *******************/
+/*****************************************************/

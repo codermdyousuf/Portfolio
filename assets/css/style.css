@@ -1,0 +1,995 @@
+/*-----------------------------------------------------------------------------------
+
+    Theme Name: Personal Portfolio HTML5 Template
+    Theme URI: https://themeforest.net/user/coder_item
+    Description: This is  HTML Web Template
+    Author: Coder_Item
+    Author URI: https://themeforest.net/user/coder_item 
+    Version: 1.0 
+  
+    Main Color : #000000
+    main Font : 'Poppins', sans-serif; 
+
+-----------------------------------------------------------------------------------   
+
+     1. General
+     2. Typography
+     3. Header Area 
+     4. About Me Area
+     5. Services Area
+     6. My skills Area 
+     7. My protfolio Area
+     8. Counter Up Area
+     9. Hire Me Area
+    10. Testimonials Area
+    11. Contact Area
+    12. Footer Area
+    13. Scroll Up Area
+    14. Preloader Area
+    
+    15. Second Version
+    16. Third Version 
+
+
+-----------------------------------------------------------------------------------*/
+
+/*****************************************************/
+/*************     1. General     ********************/
+/*****************************************************/
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Regular.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Rg';
+    src: url('../fonts/ProximaNova-Bold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Th';
+    src: url('../fonts/ProximaNova-Extrabld.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Extrabld.woff') format('woff');
+    font-weight: 800;
+    font-style: normal;
+}
+@font-face {
+    font-family: 'Proxima Nova Lt';
+    src: url('../fonts/ProximaNova-Semibold.woff2') format('woff2'),
+        url('../fonts/ProximaNova-Semibold.woff') format('woff');
+    font-weight: 600;
+    font-style: normal;
+}
+
+*{
+  -o-box-sizing: border-box;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  text-decoration: none !important;
+  list-style: none !important;
+  outline: none !important;
+}
+body{
+    font-family: 'Poppins', sans-serif;
+    margin:0;
+}
+h1,h2,h3,h4,h5,h6,p{
+    margin:0;
+}
+ul{
+    margin:0;
+    padding:0;
+    list-style:none;
+}
+input{
+    outline:none;
+}
+a:hover{
+    text-decoration: none;
+}
+
+/*****************************************************/
+/*************    2. Typography   ********************/
+/*****************************************************/
+h1{
+    font-family: 'Proxima Nova Th';
+    font-weight: 800 !important;
+    font-size: 48px !important;
+    line-height: 72px !important;
+    color: #000000;
+}   
+h2{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 24px;
+    color: #000000;
+}
+h3{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 21px;
+    color: #444444;
+}
+h4{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 18px;
+    line-height: 27px;
+    color:#000000;
+}
+h5{
+    font-family: 'Poppins';
+    font-weight: 500;
+    font-size: 24px;
+    line-height: 36px;
+    color: #444444;
+}
+h6{
+    font-family: 'Sacramento', cursive;
+    font-weight: 400;
+    font-size: 48px;
+    color: #444444;
+}
+p{  
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px; 
+    margin-top: 12px;
+}
+li{
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+}
+a{
+    font-family: 'Proxima Nova Rg';
+    font-weight: 400;
+    font-size: 16px;
+    display: inline-block;
+    color: #ffffff;
+}
+input{
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    color: #000000;
+}
+.contact-submit input{
+    font-size: 16px;
+}
+.hire-me-btn a{
+    font-size: 24px;
+    line-height: 42px;
+}
+h2.counterup-count{
+    font-size: 36px;
+}
+button{
+    font-family: 'Proxima Nova Lt';
+    font-weight: 600;
+    font-size: 16px;
+    outline: none !important;
+    color:#000000;
+    cursor: pointer;
+    display: inline-block;
+}
+.p-0{
+    padding:0;
+}
+h4 > a{
+    font-size: 18px;
+}
+.caption-header > h2{
+    font-family: 'Proxima Nova Th';
+    font-weight: 800 !important;
+    font-size: 48px !important;
+    line-height: 72px !important;
+    color: #000000;
+}
+.about-social-icon ul li a{
+    font-size: 24px;
+    color:#000000;
+}
+.scrollTop a{
+    font-size: 48px;
+}
+.section-heading{
+    text-align: center;
+    padding-bottom: 70px;
+}
+.skills-progress span:after {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    font-size: 12px;
+}
+.section-padding{
+    padding:100px 0;
+}
+.about-social-content a {
+    font-family: 'Poppins';
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 25px; 
+    margin-top: 12px;;
+}
+/*****************************************************/
+/*************    3. Header Area   *******************/
+/*****************************************************/
+.y-contact-main {
+	background: #595959;
+}
+.y-contact {}
+.y-contact ul {
+	display:flex;
+	justify-content:center;
+}
+.y-contact ul li {
+}
+.y-contact ul li a {
+	font-size: 16px;
+	color: #FCA22D;
+	margin:5px 5px;
+	font-weight:bold;
+}
+.header-area{
+    /* background: url(../images/bg/2.jpg); */
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    overflow: hidden;
+}
+.header-area:before{
+    content:"";
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-color: rgba(0,0,0,.6);
+}
+.sticky-header-area {
+    padding-top: 20px;
+}
+.top-fixt {
+    width: 100%;
+    position: fixed !important;
+    top: 0;
+    z-index: 99990;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    -webkit-transition: all .5s;
+    transition: all .5s;
+    background-color: rgba(255, 255, 255,1);
+    box-shadow: 0 1px 2px rgba(0,0,0,.1);
+    border-color: #fff;
+}
+.top-fixt .main-menu ul li a {
+    color: #000000;
+}
+.canvas .main-menu ul li a {
+    color: #fff;
+}
+.canvas-menu.canvas{
+    transition: .5s;
+}
+.canvas::after {
+    position: fixed;
+    width: 100%;
+    height: 5000px;
+    content: "";
+    background-color: rgba(0,0,0,.6);
+    top: 0;
+    left: 0;
+    z-index: -1;
+    transition: 0.5s;
+    opacity: 0;
+    visibility: hidden;
+}
+.canvas-menu.canvas::after {
+    opacity: 1;
+    visibility: visible;
+}
+.top-fixt .logo span a img {
+    width: auto !important;
+    height: 35px !important;
+}
+.top-fixt .nav-bars:hover {
+    color: #fca22d;
+}
+.white-background {
+    background: url(../images/bg/1.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: relative;
+    z-index: 9;
+}
+.header-area .logo span a img {
+    width: auto;
+    height: 35px;
+}
+.main-menu {
+    padding-top: 18px;
+}
+.main-menu ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end;
+}
+.main-menu ul li a {
+    color: #ffffff;
+    margin: 0 14px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.main-menu ul li a:hover{
+    color:#fca22d;
+}
+.main-menu .active{
+    color:#fca22d !important;
+}
+.header-content-meddle {
+    padding-top: 240px;
+    padding-bottom: 240px;
+}
+.caption-header h5 {
+    color: #000000;
+}
+.caption-header h2 span {
+    color: #000000;
+}
+.caption-header h2 span b{
+    color: #fca22d;
+}
+.caption-header h5 span {
+    color: #fca22d;
+}
+.caption-header p {
+    color: #666666;
+    width: 38%;
+}
+.header-btn ul li{
+    color: #000000;
+    display: inline-block;
+}
+.header-btn ul li a{
+    color: #000000;
+    display: inline-block;
+}
+.header-btn {
+    padding-top: 40px;
+}
+.header-btn ul li {
+    color: #000000;
+    display: inline-block;
+    margin-right: 10px;
+}
+.hire-me {
+    background-color: rgb(252, 162, 45);
+    padding: 2px 34px;
+    border-radius: 25px;
+    color: #fff !important;
+}
+.contact-me {
+    text-decoration: underline;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.contact-me:hover{
+    text-decoration: underline;
+    color: rgb(252, 162, 45);
+}
+.logo {
+    position: relative;
+}
+.nav-bars {
+    color: #fca22d;
+    font-size: 24px;
+    display: none;
+    position: absolute;
+    right: 2px;
+    top: 10px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.nav-bars:hover {
+    color: #fff;
+}
+.hvr-float-shadow::before {
+    background: -webkit-radial-gradient(center,ellipse,rgba(252, 162, 45,.8) 0,transparent 80%);
+    background: radial-gradient(ellipse at center,rgba(252, 162, 45,.8) 0,transparent 80%);
+}
+/*Nave Bar Close Button*/
+.nav-bars-open i{
+    display: none;
+}
+.nav-bars.close-menu{
+    display: none;
+}
+.nav-bars.close-menu.add-icon{
+    display: block;
+}
+.nav-bars.rem-icon{
+    display: block;
+}
+.bar.add-icon{
+    display: none;
+}
+/*****************************************************/
+/*************    4. About Me Area   *****************/
+/*****************************************************/
+.about-me-area{
+    background-color: #fff;
+    position: relative;
+    overflow: hidden;
+}
+.about-me-area:before {
+    background: url(../images/bg/2.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+}
+.about-video{
+    text-align: center;
+    position: relative;
+}
+.about-video img {
+    width: 47%;
+    height: auto;
+    border-radius: 5px;
+}
+.play-btn img {
+    width: auto;
+    height: 60px;
+    display: inline-block;
+    cursor: pointer;
+}
+.play-btn{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.about-text p{
+    color:#666666;
+}
+.about-text p > span{
+    color:#000000;
+}
+/*****************************************************/
+/*************    5. Services Area   *****************/
+/*****************************************************/
+.services-area{
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.single-services-item {
+    text-align: center;
+    padding-bottom: 70px;
+}
+.single-services-item img{
+    width: auto;
+    height: 62px;
+}
+.single-services-item h4 {
+    padding-top: 25px;
+}
+.single-services-item p{
+    color: #666666;
+}
+/*****************************************************/
+/*************    6. My Skills Area   ****************/
+/*****************************************************/
+.my-skills-area{
+    background-color: #fff;
+    position: relative;
+}
+.my-skills-area:before {
+    background: url(../images/bg/3.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    height: 110%;
+    width: 100%;
+}
+.skills .item {
+    margin-bottom: 40px;
+}
+.skills h3 {
+    color: #000000;
+    position: relative;
+    top: -6px;
+    z-index: 2;
+}
+.skills .skills-progress {
+    width: 100%;
+    padding: 2px 10px;
+    background-color: rgb(112, 112, 112);
+    box-shadow: 0px 2px 7px rgba(0, 0, 0, 0.15) inset;
+    position: relative;
+}
+.skills .skills-progress span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 10%;
+    background-color: rgb(252, 162, 45);
+    -webkit-transition: all 1s;
+    transition: all 1s;
+}
+.skills .skills-progress span:after {
+    content: attr(data-value);
+    position: absolute;
+    top: -20px;
+    right: 10px;
+    font-size: 12px;
+    font-weight: 600;
+    color: #000000;
+}
+/*****************************************************/
+/*************    7. My protfolio Area   *************/
+/*****************************************************/
+.my-protfolio-area{
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.filtering-btn {
+    text-align: center;
+}
+.filtering-btn button {
+    border: none;
+    background-color: transparent;
+    margin: 0 5px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.filtering-btn button:hover {
+   color: #fca22d;
+}
+.gallery-filtering.text-center {
+    margin-top: 25px;
+}
+.item-images{
+    position: relative;
+    overflow: hidden;
+	width:286px;
+	height:275px;
+}
+.item-images img {
+    height: auto;
+    vertical-align: middle;
+    width: 100%;
+}
+.item-images-overlay {
+    position: absolute;
+    background-color: rgba(0, 0, 0,.8);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom:0;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: 2;
+    -webkit-transform: scale(.3);
+            transform: scale(.3);
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.item-images:hover .item-images-overlay{
+    opacity: 1;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
+    -webkit-transform: translateY(0);
+            transform: translateY(0);
+}
+.item-overlay-info h3{
+    color:#d5d5d5;
+}
+.item-overlay-info h4{
+    color: #ffffff;
+}
+.item-overlay-icon .icon a i{
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    border:1px solid #ffffff;
+    font-size: 14px;
+    color: #ffffff;
+    border-radius: 50%;
+    line-height: 28px;
+    margin: 0 5px;
+    transition: .5s;
+}
+.item-overlay-icon .icon a i:hover{
+    background-color: #ffffff;
+    color: #000;
+}
+.item-overlay-icon {
+    padding-top: 12px;
+}
+.filtering-btn .control.is-checked{
+    color: #fca22d;
+}
+/*****************************************************/
+/*************    8. Counter Up Area   ***************/
+/*****************************************************/
+.counterup-area{
+    background-color: #f5f6f5;
+    overflow: hidden;
+}
+.single-counter-itme {
+    text-align: center;
+}
+.counter-icon {
+    display: inline-block;
+}
+.counter-icon i {
+    font-size: 45px;
+    color: #fca22d;
+}
+.single-counter-itme h2 {
+    line-height: 0px;
+    padding-top: 40px;
+}
+.single-counter-itme p {
+    color: #000000;
+    padding-top: 0;
+}
+.counterup-count span {
+    margin-right: 5px;
+}
+/*****************************************************/
+/*************    9. Hire Me Area   ******************/
+/*****************************************************/
+.hire-me-area{
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.hire-me-content{
+    text-align: center;
+}
+.hire-me-btn a{
+    background-color: rgb(252, 162, 45);
+    padding: 2px 34px;
+    border-radius: 25px;
+}
+.hire-me-btn a:hover{
+    color:#fff;
+}
+.hire-me-btn {
+    padding-top: 40px;
+}
+/*****************************************************/
+/*************    10. Testimonials Area   *************/
+/*****************************************************/
+.testimonials-area{
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.testimonials-images {
+    display: inline-block;
+}
+.single-people-item {
+    background-color: rgb(255, 255, 255);
+    box-shadow: 0px 0px 43px 0px rgba(0, 0, 0, 0.15);
+    margin: 0 15px;
+    border-radius: 5px;
+    padding: 25px;
+}
+.single-top {
+    display: inline-block;
+    padding-left: 20px;
+}
+.single-top h4 {
+    color: #010101;
+}
+.single-top h3 {
+    font-style: italic;
+    color: #444444;
+}
+.testimonials-images img{
+    width: 80px !important;
+    height:80px !important;
+    border-radius: 50%;
+}
+.testimonials-img-name {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+}
+.content-people p{
+    color: #4e4e4e;
+}
+.people-corousel-area .owl-dots{
+    margin-top: 40px !important;
+}
+.people-corousel-area.owl-carousel {
+    z-index: 0;
+}
+.people-corousel-area.owl-theme .owl-dots .owl-dot span {
+    width: 25px !important;
+    height: 25px !important;
+    margin: 5px 7px;
+    border: 1px solid rgb(149, 149, 149);
+    background: transparent;
+}
+.people-corousel-area.owl-theme .owl-dots .owl-dot.active span, .owl-theme .owl-dots .owl-dot:hover span {
+    background: #fca22d;
+    border: 1px solid #fca22d;
+}
+.people-corousel-area.owl-carousel .owl-stage-outer {
+    overflow: visible;
+}
+.single-people-item .rating {
+    padding-top: 25px;
+}
+.single-people-item .rating i{
+    font-size: 16px;
+    color: #ed8a19;
+}
+/*****************************************************/
+/*************    11. Contact Area   *****************/
+/*****************************************************/
+.contact-area{
+    background-color: #ffffff;
+    overflow: hidden;
+}
+.contact-input input,textarea {
+    width: 100%;
+    display: block;
+    border: 1px solid #929292;
+    padding: 12px 12px;
+    margin-bottom: 25px;
+}
+.contact-input textarea{
+    height: 180px;
+}
+.contact-input input:focus, textarea:focus {
+    color: #000;
+    border: 1px solid #fca22d !important;
+    outline: none;
+}
+.contact-submit input {
+    border: none;
+    background-color: #fca22d;
+    text-transform: uppercase;
+    color: #FFF;
+    padding: 12px 36px;
+    cursor: pointer;
+    border:1px solid transparent;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.contact-submit input:hover{
+    color:#fca22d;
+    background-color: transparent;
+    border:1px solid #fca22d;
+}
+.about-social-images img {
+    width: 160px;
+    height: auto;
+}
+.about-social-content {
+    padding-left: 35px;
+}
+.about-social-content h6 {
+    padding-bottom: 25px;
+}
+.about-social-content p {
+    color: #222222;
+    margin-top: 0;
+}
+.about-social-content a {
+    color: #222222;
+    margin-top: 0;
+}
+.about-social-icon {
+    padding-top: 40px;
+}
+.about-social-icon ul{
+    float: left;
+}
+.about-social-icon ul li {
+    display: inline-block;
+}
+.about-social-icon ul li a i {
+    width: 50px;
+    height: 50px;
+    border: .5px solid #000000;
+    border-radius: 50%;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin-right: 5px;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.about-me-social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+        -ms-flex-align: end;
+            align-items: end;
+}
+.about-social-icon i:hover{
+     color: #ffffff;
+     border: 1px solid transparent;
+}
+.about-social-icon i.fa-facebook:hover{
+    background-color: #3b5998;
+}
+.about-social-icon i.fa-twitter:hover{
+    background-color: #00acee;
+}
+.about-social-icon i.fa-instagram:hover{
+    background-color: #517fa4;
+}
+.about-social-icon i.fa-dribbble:hover{
+    background-color:#ea4c89;
+}
+.about-social-icon i.fa-at:hover{
+    background-color: #3e65cf;
+}
+.about-social-icon i.fa-skype:hover{
+    background-color: #00aff0;
+}
+.about-social-icon i.fa-pinterest-p:hover{
+    background-color: #bd081c;
+}
+/*****************************************************/
+/*************    12. Footer Area   ******************/
+/*****************************************************/
+.footer-area{
+    background-color: #333333;
+    overflow: hidden;
+    padding:10px 0;
+}
+.footer-content{
+    text-align: center;
+}
+.footer-content h4{
+    color: #ffffff;
+}
+.footer-content h4 a {
+    text-decoration: underline;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.footer-content h4 a:hover{
+    color: #fca22d;
+}
+/*****************************************************/
+/*************    13. Scroll Up Area   ****************/
+/*****************************************************/
+.scrollTop {
+    position: fixed;
+    right: 20px;
+    bottom: 20px;
+    opacity: 0;
+    -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+    z-index: 9999;
+    display: inline-block;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.scrollTop a {
+    color: #ffffff;
+    background-color: rgba(252, 162, 45,.8);
+    box-shadow: 0px 0px 32px 0px rgba(0, 0, 0, 0.2);
+    padding: 0px 8px;
+    border-radius: 3px;
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    -webkit-transition: .5s;
+    transition: .5s;
+}
+.scrollTop a:hover{
+    background-color: rgba(252, 162, 45,1);
+}
+/*****************************************************/
+/*************    14. Preloader Area   ***************/
+/*****************************************************/
+#preloader {
+    position:fixed;
+    left:0;
+    top:0;
+    z-index:99999999999;
+    width:100%;
+    height:100%;
+    overflow:visible;
+    background: #fff url('../images/preloader/loader.gif') no-repeat center center;
+}
+
+
+/*****************************************************/
+/************   15. Second Version  ******************/
+/*****************************************************/
+.second-version .cd-headline.clip .cd-words-wrapper::after {
+    content: '';
+    position: absolute;
+    top: 25px;
+    right: 0;
+    width: 2px;
+    height: 50%;
+    background-color: #fca22d;
+}
+
+/*****************************************************/
+/************   16. Third Version  *******************/
+/*****************************************************/
+
+.header-area.third-version {
+    position: relative;
+    background: transparent;
+}
+.background-video-area{
+    background-size: cover;
+    width:auto;
+    height: 100%;
+    vertical-align: middle;
+    position: absolute;
+    top: 0;
+    z-index: -1;
+}
+.header-area.third-version video {
+  position: absolute;
+  top: 50%; 
+  left: 50%;
+  -webkit-transform: translateX(-50%) translateY(-50%);
+  transform: translateX(-50%) translateY(-50%);
+  min-width: 100%; 
+  min-height: 100%; 
+  width: auto; 
+  height: auto;
+  z-index: -1000; 
+  overflow: hidden;
+}
